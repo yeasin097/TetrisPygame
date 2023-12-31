@@ -18,7 +18,7 @@ class Game:
         self.rotate_sound = pygame.mixer.Sound("Music/rotate.mp3")
         self.bom_sound = pygame.mixer.Sound("Music/bomsound.mp3")
         pygame.mixer.music.load("Music/runsoundtetris.mp3")
-        # pygame.mixer.music.play(-1)
+        pygame.mixer.music.play(-1)
         return
 
     def update_score(self, lines_cleared, move_down_points):
